@@ -166,7 +166,7 @@ fbq('track', 'PageView');
 
       <div class="gradient"></div>
       <div class="overlay">
-        <div class="name">Yasmin<span class="age">, 19</span></div>
+        <div class="name">Daynara<span class="age">, 19</span></div>
 
         <div class="seeking">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -194,7 +194,7 @@ fbq('track', 'PageView');
   <!-- Overlay de proximidade -->
   <div class="intro-overlay" id="introOverlay" aria-live="polite" aria-hidden="true">
     <div class="intro-bubble">
-      <span>Você e Yasmin estão muito perto um do outro!</span>
+      <span>Você e Daynara estão muito perto um do outro!</span>
     </div>
   </div>
 
@@ -295,7 +295,7 @@ fbq('track', 'PageView');
 
       // b) Swipes sequenciais
       const startSwipesAt = 00; // após overlay
-      const swipeGap = 80;
+      const swipeGap = 0;
       order.forEach((el, i)=>{
         setTimeout(()=> el.classList.add('swipe'), startSwipesAt + i*swipeGap);
       });
@@ -303,8 +303,8 @@ fbq('track', 'PageView');
       // c) Notificações e redirecionamento
       const afterStack = startSwipesAt + order.length*swipeGap + 400;
       setTimeout(()=>{
-        queueNotif(nfContainer, 'Yasmin está online agora…', 0, audio, 1600);
-        queueNotif(nfContainer, 'Redirecionando você para o WhatsApp dela…', 1400, audio, 1400);
+        queueNotif(nfContainer, 'Daynara está online agora…', 0, audio, 00);
+        queueNotif(nfContainer, 'Redirecionando você para o WhatsApp dela…', 00, audio, 00);
       }, afterStack);
 
       const redirectAt = afterStack + 00 + 00;
