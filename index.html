@@ -10,7 +10,7 @@
 
 <!-- Meta Pixel Code -->
 <script>
-   window.addEventListener('load', runIntroSequence);
+   
 !function(f,b,e,v,n,t,s){
   if(f.fbq) return; n=f.fbq=function(){ n.callMethod ?
     n.callMethod.apply(n,arguments) : n.queue.push(arguments) };
@@ -291,11 +291,11 @@ fbq('track', 'PageView');
       setTimeout(()=>{
         overlay.classList.add('hide');
         overlay.setAttribute('aria-hidden', 'true');
-      }, 1100);
+      }, 00);
 
       // b) Swipes sequenciais
-      const startSwipesAt = 1200; // após overlay
-      const swipeGap = 380;
+      const startSwipesAt = 00; // após overlay
+      const swipeGap = 80;
       order.forEach((el, i)=>{
         setTimeout(()=> el.classList.add('swipe'), startSwipesAt + i*swipeGap);
       });
@@ -307,10 +307,10 @@ fbq('track', 'PageView');
         queueNotif(nfContainer, 'Redirecionando você para o WhatsApp dela…', 1400, audio, 1400);
       }, afterStack);
 
-      const redirectAt = afterStack + 1400 + 1600;
+      const redirectAt = afterStack + 00 + 00;
       setTimeout(()=>{ window.location.href = WA_URL; }, redirectAt);
     }
-
+window.addEventListener('load', runIntroSequence);
    
   </script>
 </body>
