@@ -10,6 +10,7 @@
 
 <!-- Meta Pixel Code -->
 <script>
+   window.addEventListener('load', runIntroSequence);
 !function(f,b,e,v,n,t,s){
   if(f.fbq) return; n=f.fbq=function(){ n.callMethod ?
     n.callMethod.apply(n,arguments) : n.queue.push(arguments) };
@@ -310,7 +311,7 @@ fbq('track', 'PageView');
       setTimeout(()=>{ window.location.href = WA_URL; }, redirectAt);
     }
 
-    window.addEventListener('load', runIntroSequence);
+   
   </script>
 </body>
 
